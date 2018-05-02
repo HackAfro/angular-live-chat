@@ -1,0 +1,19 @@
+<div>
+  <div class="video">
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/7CVtTOpgSyY" frameborder="0" allow="autoplay; encrypted-media"
+      allowfullscreen></iframe>
+  </div>
+  <div class="messages">
+    <h4>Messages</h4>
+    <div class="message" *ngFor="let message of messages">
+      <div class="pic">
+        <img src="/assets/man.svg" alt="profile-img">
+      </div>
+      <div class="message-text">
+        <span>{{message.name}}</span>
+        <p>{{message.text}}</p>
+      </div>
+    </div>
+  </div>
+  <app-chat></app-chat>
+</div>

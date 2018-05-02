@@ -1,0 +1,56 @@
+.admin {
+  width: 500px;
+
+  .video {
+    display: flex;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+
+    .vid-thumbnail {
+      flex: 1;
+
+      img {
+        height: 70px;
+        width: 120px;
+      }
+    }
+
+    .vid-desc {
+      flex: 4;
+      padding: 0 8px;
+
+      span {
+        font-size: 15px;
+        font-weight: bold;
+        opacity: 0.8;
+      }
+
+      p {
+        margin: 3px;
+        font-size: 17px;
+        opacity: 0.6;
+      }
+    }
+
+    .vid-rating {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .header{
+        font-size: 12px;
+        margin: 0 0 5px;
+        opacity: 0.6;
+      }
+
+      .positive {
+        color: #40a940;
+      }
+
+      .negative {
+        color: rgb(196, 64, 64);
+      }
+    }
+  }
+}

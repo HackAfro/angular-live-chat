@@ -1,0 +1,27 @@
+<div class="admin">
+  <h3>Admin</h3>
+
+  <div>
+    <h4>Videos List</h4>
+    <div class="video">
+      <div class="vid-thumbnail">
+        <img src="/assets/vid-thumbnail.png" alt="video thumbnail">
+      </div>
+      <div class="vid-desc">
+        <span>Pixar</span>
+        <p>Shooting Star Clip</p>
+      </div>
+      <div class="vid-rating">
+        <span class="header">
+          Rating
+        </span>
+        <div [hidden]="rating < 1">
+          <span data-feather="thumbs-up" class="positive"></span>
+        </div>
+        <div [hidden]="rating >= 1">
+          <span data-feather="thumbs-down" class="negative"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+.video {
+  width: 500px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.messages {
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+
+  h4 {
+    margin: 10px 0;
+  }
+
+  .message {
+    display: flex;
+
+    .pic {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+      }
+    }
+
+    .message-text {
+      padding: 10px;
+
+      span {
+        font-size: 11px;
+        opacity: 0.8;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 15px;
+        opacity: 0.6;
+        margin: 2px 0;
+      }
+    }
+  }
+}
