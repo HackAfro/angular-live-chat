@@ -11,10 +11,6 @@ export class HomeComponent implements OnInit {
   constructor(private pusher: PusherService) {}
   messages: Array<Message> = [];
 
-  // onNewMessage(event: Message) {
-  //   this.messages = this.messages.concat(event);
-  // }
-
   ngOnInit() {
     const channel = this.pusher.init('chat');
     channel.bind('message', (data) => {

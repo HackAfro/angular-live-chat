@@ -1,6 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from '../../environments/environment';
 
 declare const feather: any;
 export interface Message {
@@ -26,7 +25,7 @@ export class ChatComponent implements OnInit {
   sendMessage() {
     if (this.message.text !== '' && this.message.name !== '') {
       this.http
-        .post(`${environment.apiUrl}/messages`, this.message)
+        .post(`http://localhost:4000/messages`, this.message)
         .subscribe((res: Message) => {
           this.onSendMessage.emit(res);
           this.message = {

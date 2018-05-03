@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { environment } from '../environments/environment';
 declare const Pusher: any;
 
 @Injectable()
 export class PusherService {
   constructor() {
-    this.pusher = new Pusher(environment.pusherKey, {
+  // Replace this with your pusher key    
+    this.pusher = new Pusher('<PUSHER_KEY>', {
       cluster: 'eu',
       encrypted: true,
     });
