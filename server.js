@@ -37,11 +37,11 @@ app.post('/messages', (req, res) => {
     text,
     name,
     timeStamp: new Date(),
+    score: comparative,
   };
 
   try {
-    pusher.trigger('chat', 'message', data);
-    pusher.trigger('rate', 'message', { sentiment: comparative });
+    pusher.trigger(['chat', 'rate'], 'message', data);
   } catch (e) {}
 
   res.json(data);
