@@ -17,7 +17,7 @@ export class AdminComponent implements OnInit {
     feather.replace();
     const channel = this.pusher.init('rate');
     channel.bind('message', (data) => {
-      this.rating += data.sentiment;
+      this.rating += data.score;
     });
   }
 }
