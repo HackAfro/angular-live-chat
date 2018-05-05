@@ -5,7 +5,7 @@ declare const Pusher: any;
 export class PusherService {
   constructor() {
   // Replace this with your pusher key    
-    this.pusher = new Pusher('<PUSHER_KEY>', {
+    this.pusher = new Pusher('PUSHER_KEY', {
       cluster: 'eu',
       encrypted: true,
     });
