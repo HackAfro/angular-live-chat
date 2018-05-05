@@ -4,17 +4,19 @@ Video ratings during in an Angular live chat application using sentiment analysi
 
 ## Getting Started
 
-1. Install the angular [https://cli.angular.io](CLI) by running `npm install -g @angular/cli`
+1. Install the angular [CLI](https://cli.angular.io) by running `npm install -g @angular/cli`
 2. Clone the repo
 3. Install project dependencies by running `npm install`
 4. Start dev server `npm start`
 
 
 ## How To
-
-- Get your pusher keys from your profile.
-- Create a file named `.env` and place your `appId`, `key` and `secret` there.
-- Include your pusher key in the environment.ts file
+Create a file `.env` and copy the following to the file. Replace the placeholder values with your Pusher credentials:
+```
+PUSHER_APP_ID=your-app-id
+PUSHER_APP_KEY=your-app-key
+PUSHER_APP_SECRET=your-app-secret
+```
 
 ## Built With
 
